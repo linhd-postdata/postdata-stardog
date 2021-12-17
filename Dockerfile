@@ -1,7 +1,7 @@
 FROM centos:7
 
 # STARDOG_HOME is user data directory
-ENV STARDOG_HOME=/stardog STARDOG_SERVER_JAVA_ARGS="-Xmx8g -Xms8g -XX:MaxDirectMemorySize=12g"
+ENV STARDOG_HOME=/stardog STARDOG_SERVER_JAVA_ARGS="-Xmx16g -Xms16g -XX:MaxDirectMemorySize=32g"
 
 # Install stardog from its repo
 RUN curl http://packages.stardog.com/rpms/stardog.repo > /etc/yum.repos.d/stardog.repo && \
